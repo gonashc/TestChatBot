@@ -83,10 +83,10 @@ def get_bot_response():
         #Copy badBot.sqlite3 to botData.sqlite3
         userText = 'Shutting down now...'
         file_directory = os.path.dirname(os.path.abspath('badBot.sqlite3'))
-        bot_model_db = os.path.join(file_directory, "mybot/badBot.sqlite3")
+        bot_model_db = os.path.join(file_directory, "TestChatBot/badBot.sqlite3")
         copyfile(bot_model_db, 'botData.sqlite3')
         file_directory = os.path.dirname(os.path.abspath('chatbot.csv'))
-        bot_model_csv = os.path.join(file_directory, "mybot/data/chatbot.csv")
+        bot_model_csv = os.path.join(file_directory, "TestChatBot/data/chatbot.csv")
         if os.path.exists(bot_model_csv):
             os.remove(bot_model_csv)
         sys.exit()
